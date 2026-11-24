@@ -1086,3 +1086,29 @@ function addPendingReview(r) {
   try { const a = JSON.parse(localStorage.getItem('pendingReviews') || '[]'); a.push(r); localStorage.setItem('pendingReviews', JSON.stringify(a.slice(-5))); } catch (e) {}
   renderTestimonials();
 }
+
+
+
+
+/* الصعود إلى أعلى الصفحة بضغطة واحدة على شعار نورمال (نحو ثانية واحدة) */
+(function () {
+    function toTop() {
+        const start = window.pageYOffset || document.documentElement.scrollTop;
+        if (start <= 0) return;
+        const dur = Math.min(1100, 450 + start / 6), t0 = performance.now();
+        const root = document.documentElement, prev = root.style.scrollBehavior;
+        root.style.scrollBehavior = 'auto';
+        const ease = t => 1 - Math.pow(1 - t, 3);
+        (function step(now) {
+            const p = Math.min(1, (now - t0) / dur);
+            window.scrollTo(0, start * (1 - ease(p)));
+            if (p < 1) requestAnimationFrame(step); else root.style.scrollBehavior = prev;
+        })(t0);
+    }
+    ['brandTop', 'footerBrandTop'].forEach(function (id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.addEventListener('click', toTop);
+        el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toTop(); } });
+    });
+})();
