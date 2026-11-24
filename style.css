@@ -1498,3 +1498,7 @@ body, .brand-badge, .stat-number, .footer-brand, .p-badge, .logo-main, .logo-sub
     .ns-bar { flex-direction: column; align-items: stretch; } .ns-ctl { justify-content: center; }
 }
 @media (prefers-reduced-motion: reduce) { .ns-slide, .ns-slide.on { transition: none; } }
+
+/* ضغطة واحدة على شعار نورمال تعيدك إلى أعلى الصفحة */
+#brandTop, #footerBrandTop { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+#brandTop:active, #footerBrandTop:active { opacity: .75; }
