@@ -1537,3 +1537,23 @@ body, .brand-badge, .stat-number, .footer-brand, .p-badge, .logo-main, .logo-sub
     border-color: var(--normal-navy);
 }
 :root[data-theme="dark"] .sub-filter-chip.active { background: var(--normal-blue); border-color: var(--normal-blue); }
+
+/* شريط تمرير واضح وقابل للسحب لقائمة الخدمات الفرعية */
+.sub-services-grid {
+    scrollbar-width: thin;
+    scrollbar-color: var(--normal-blue) var(--border-color);
+    padding-inline-end: 8px;
+    scroll-behavior: smooth;
+}
+.sub-services-grid::-webkit-scrollbar { width: 8px; }
+.sub-services-grid::-webkit-scrollbar-track {
+    background: var(--border-color);
+    border-radius: 999px;
+}
+.sub-services-grid::-webkit-scrollbar-thumb {
+    background: var(--normal-blue);
+    border-radius: 999px;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+}
+.sub-services-grid::-webkit-scrollbar-thumb:hover { background: var(--normal-light-blue); background-clip: padding-box; }
