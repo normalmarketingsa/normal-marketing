@@ -51,7 +51,7 @@ html {
 body {
     background-color: var(--bg-light);
     color: var(--text-main);
-    font-family: 'Cairo', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
     padding-bottom: 110px;
     position: relative;
     overflow-x: hidden;
@@ -129,7 +129,7 @@ body {
     cursor: pointer;
     font-weight: 700;
     font-size: 13px;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -178,7 +178,7 @@ body {
     color: var(--text-main);
     padding: 9px 12px;
     border-radius: 8px;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
     font-size: 13px;
     font-weight: 600;
     display: flex;
@@ -741,7 +741,7 @@ body {
     border: 1.5px solid var(--border-color);
     border-radius: 12px;
     padding: 13px;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
     font-size: 13.5px;
     margin-bottom: 12px;
 }
@@ -760,7 +760,7 @@ body {
     border: none;
     padding: 14px;
     border-radius: 12px;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
     font-weight: 800;
     font-size: 15px;
     cursor: pointer;
@@ -778,7 +778,7 @@ body {
     border: 1.5px solid var(--border-color);
     padding: 11px;
     border-radius: 12px;
-    font-family: 'Cairo', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
     font-weight: 700;
     font-size: 13px;
     cursor: pointer;
@@ -992,9 +992,9 @@ body {
    الطبقة الفاخرة — هوية متوافقة مع اللوغو + الوضع الليلي
    ========================================================== */
 body, .brand-badge, .stat-number, .footer-brand, .p-badge, .logo-main, .logo-sub {
-    font-family: 'Cairo', 'Outfit', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', 'Outfit', sans-serif;
 }
-.brand-badge, .footer-brand, .stat-number, .p-badge { font-family: 'Outfit', 'Cairo', sans-serif; }
+.brand-badge, .footer-brand, .stat-number, .p-badge { font-family: 'Outfit', 'IBM Plex Sans Arabic', sans-serif; }
 :root[lang="ar"] .section-tag { letter-spacing: 0; }
 :focus-visible { outline: 2px solid var(--normal-blue); outline-offset: 3px; }
 
@@ -1118,7 +1118,7 @@ body, .brand-badge, .stat-number, .footer-brand, .p-badge, .logo-main, .logo-sub
 .hero-section .sub-title { color: #9FB3CC; font-size: 16px; margin-top: 4px; }
 .hero-section .logo-main { color: #fff; } .hero-section .logo-sub { color: #7FC0FF; }
 .hero-cta { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
-.btn-primary, .btn-ghost { font-family: 'Cairo', sans-serif; font-size: 14.5px; text-decoration: none; border-radius: 14px; }
+.btn-primary, .btn-ghost { font-family: 'IBM Plex Sans Arabic', sans-serif; font-size: 14.5px; text-decoration: none; border-radius: 14px; }
 .btn-primary { position: relative; overflow: hidden; padding: 14px 32px; font-weight: 800; color: #fff; background: linear-gradient(135deg, #2B8FE0, #1E78BD 55%, #175C93); box-shadow: 0 14px 32px -10px rgba(30,120,189,.85), inset 0 1px 0 rgba(255,255,255,.28); }
 .btn-primary::after { content: ''; position: absolute; top: 0; bottom: 0; left: -60%; width: 40%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.4), transparent); transform: skewX(-20deg); transition: left .8s; }
 .btn-primary:hover::after { left: 130%; }
@@ -1182,12 +1182,12 @@ body, .brand-badge, .stat-number, .footer-brand, .p-badge, .logo-main, .logo-sub
 .review-submit { width: 100%; margin-top: 4px; }
 .review-note { font-size: 13px !important; margin-bottom: 16px !important; }
 .review-msg { font-size: 13px; font-weight: 700; color: var(--normal-blue); margin-top: 10px; min-height: 18px; }
-#reviewForm select { width: 100%; background: var(--surface-2); color: var(--text-main); border: 1.5px solid var(--border-color); border-radius: 12px; padding: 12px; font-family: 'Cairo', sans-serif; font-size: 16px; margin-bottom: 12px; }
+#reviewForm select { width: 100%; background: var(--surface-2); color: var(--text-main); border: 1.5px solid var(--border-color); border-radius: 12px; padding: 12px; font-family: 'IBM Plex Sans Arabic', sans-serif; font-size: 16px; margin-bottom: 12px; }
 #reviewModal .lightbox-content { max-width: 520px; }
 
 /* أزرار اللغة داخل نافذة الخدمات */
 .modal-lang { display: flex; gap: 6px; margin-bottom: 16px; }
-.modal-lang-btn { font-family: 'Cairo', sans-serif; font-size: 12px; font-weight: 700; padding: 6px 13px; border-radius: 999px; border: 1.5px solid var(--border-color); background: var(--surface); color: var(--text-muted); cursor: pointer; }
+.modal-lang-btn { font-family: 'IBM Plex Sans Arabic', sans-serif; font-size: 12px; font-weight: 700; padding: 6px 13px; border-radius: 999px; border: 1.5px solid var(--border-color); background: var(--surface); color: var(--text-muted); cursor: pointer; }
 .modal-lang-btn:hover { color: var(--normal-blue); border-color: var(--normal-blue); }
 .modal-lang-btn.active { background: var(--accent-fill); border-color: var(--accent-fill); color: #fff; }
 .modal-title { margin-top: 4px; }
@@ -1306,7 +1306,7 @@ body, .brand-badge, .stat-number, .footer-brand, .p-badge, .logo-main, .logo-sub
 .ring-spin { position: absolute; inset: -9px; border-radius: 50%; border: 1px dashed rgba(127,192,255,.35); animation: spin2 24s linear infinite; }
 .ring-spin::after { content: ''; position: absolute; top: -3.5px; left: 50%; width: 7px; height: 7px; margin-left: -3.5px; border-radius: 50%; background: #9FD0FF; box-shadow: 0 0 10px 2px rgba(127,192,255,.9); }
 @keyframes spin2 { to { transform: rotate(360deg); } }
-.ring-num { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; direction: ltr; font-family: 'Outfit', 'Cairo', sans-serif; font-weight: 800; font-size: 38px; color: #fff; text-shadow: 0 0 18px rgba(77,163,240,.6); }
+.ring-num { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; direction: ltr; font-family: 'Outfit', 'IBM Plex Sans Arabic', sans-serif; font-weight: 800; font-size: 38px; color: #fff; text-shadow: 0 0 18px rgba(77,163,240,.6); }
 .ring-num i { font-style: normal; font-size: 22px; color: #7FC0FF; margin-inline-start: 2px; }
 .stat-card h3 { font-size: 16.5px; font-weight: 800; color: #fff; margin-bottom: 6px; }
 .stat-card p { font-size: 12px; font-weight: 600; color: #8FA6C0; line-height: 1.7; }
@@ -1322,7 +1322,7 @@ body, .brand-badge, .stat-number, .footer-brand, .p-badge, .logo-main, .logo-sub
 .sb-panel > * { position: relative; }
 .sb-main { display: flex; flex-direction: column; justify-content: center; }
 .sb-kicker { align-self: flex-start; font-size: 11px; font-weight: 800; letter-spacing: 2.5px; color: #8CC6FA; border: 1px solid rgba(127,192,255,.35); background: rgba(77,163,240,.1); padding: 5px 14px; border-radius: 999px; margin-bottom: 8px; }
-.sb-big { display: flex; align-items: baseline; justify-content: flex-end; direction: ltr; font-family: 'Outfit', 'Cairo', sans-serif; font-weight: 800; font-size: clamp(68px, 9.5vw, 128px); line-height: 1.05; background: linear-gradient(110deg, #FFFFFF 0%, #9FD0FF 28%, #2B8FE0 52%, #9FD0FF 76%, #FFFFFF 100%); background-size: 260% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradShift 6s linear infinite; filter: drop-shadow(0 0 28px rgba(43,143,224,.45)); }
+.sb-big { display: flex; align-items: baseline; justify-content: flex-end; direction: ltr; font-family: 'Outfit', 'IBM Plex Sans Arabic', sans-serif; font-weight: 800; font-size: clamp(68px, 9.5vw, 128px); line-height: 1.05; background: linear-gradient(110deg, #FFFFFF 0%, #9FD0FF 28%, #2B8FE0 52%, #9FD0FF 76%, #FFFFFF 100%); background-size: 260% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradShift 6s linear infinite; filter: drop-shadow(0 0 28px rgba(43,143,224,.45)); }
 .sb-big i { font-style: normal; margin-inline-start: 4px; }
 .sb-big { justify-content: flex-start; }
 @keyframes gradShift { to { background-position: -260% 0; } }
@@ -1340,7 +1340,7 @@ body, .brand-badge, .stat-number, .footer-brand, .p-badge, .logo-main, .logo-sub
 @keyframes dotPulse { 50% { r: 8; opacity: .6; } }
 .sb-bars { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px 26px; padding-top: 10px; border-top: 1px solid rgba(127,192,255,.16); }
 .sb-bar-top { display: flex; justify-content: space-between; align-items: baseline; margin: 16px 0 9px; font-size: 13px; font-weight: 700; color: #B7C8DC; }
-.sb-bar-top b { font-family: 'Outfit', 'Cairo', sans-serif; font-size: 20px; font-weight: 800; color: #fff; }
+.sb-bar-top b { font-family: 'Outfit', 'IBM Plex Sans Arabic', sans-serif; font-size: 20px; font-weight: 800; color: #fff; }
 .sb-track { height: 8px; border-radius: 999px; background: rgba(127,192,255,.14); overflow: hidden; }
 .sb-fill { display: block; height: 100%; width: 0; border-radius: 999px; background: linear-gradient(90deg, #1E78BD, #4DA3F0, #BFE0FF); background-size: 200% 100%; box-shadow: 0 0 12px rgba(77,163,240,.8); transition: width 2.2s cubic-bezier(.2,.8,.2,1); animation: fillShine 3s linear infinite; }
 @keyframes fillShine { to { background-position: -200% 0; } }
@@ -1364,7 +1364,7 @@ body, .brand-badge, .stat-number, .footer-brand, .p-badge, .logo-main, .logo-sub
 .op-head h3 { font-size: 19px; font-weight: 900; color: var(--heading); }
 .op-note { font-size: 12.5px; line-height: 1.9; color: var(--text-muted); margin: 10px 0 14px; }
 .op-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
-.owner-panel button, .owner-panel select, .owner-panel input[type=text] { font-family: 'Cairo', sans-serif; font-size: 12.5px; background: var(--surface-2); color: var(--text-main); border: 1px solid var(--border-color); border-radius: 10px; padding: 8px 12px; }
+.owner-panel button, .owner-panel select, .owner-panel input[type=text] { font-family: 'IBM Plex Sans Arabic', sans-serif; font-size: 12.5px; background: var(--surface-2); color: var(--text-main); border: 1px solid var(--border-color); border-radius: 10px; padding: 8px 12px; }
 .owner-panel button { cursor: pointer; font-weight: 700; }
 .owner-panel button:hover { border-color: var(--normal-blue); color: var(--normal-blue); }
 .op-primary { background: var(--accent-fill) !important; color: #fff !important; border-color: transparent !important; }
@@ -1441,9 +1441,9 @@ body, .brand-badge, .stat-number, .footer-brand, .p-badge, .logo-main, .logo-sub
 /* ===== شاشة العرض — أعمالنا على الشاشة ===== */
 .nshow { max-width: 1000px; margin: 0 auto 46px; }
 .ns-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 22px; }
-.ns-tag { font-family: 'Outfit', 'Cairo', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 3px; color: var(--normal-blue); }
+.ns-tag { font-family: 'Outfit', 'IBM Plex Sans Arabic', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 3px; color: var(--normal-blue); }
 .ns-tabs { display: flex; gap: 6px; flex-wrap: wrap; }
-.ns-tab { font: 700 12.5px 'Cairo', sans-serif; padding: 7px 15px; border-radius: 999px; border: 1px solid var(--border-color); background: var(--surface); color: var(--text-muted); cursor: pointer; transition: .25s; }
+.ns-tab { font: 700 12.5px 'IBM Plex Sans Arabic', sans-serif; padding: 7px 15px; border-radius: 999px; border: 1px solid var(--border-color); background: var(--surface); color: var(--text-muted); cursor: pointer; transition: .25s; }
 .ns-tab:hover { color: var(--heading); border-color: var(--normal-blue); }
 .ns-tab.on { background: linear-gradient(135deg, var(--normal-light-blue), var(--normal-blue)); color: #fff; border-color: transparent; }
 .ns-rig { position: relative; }
