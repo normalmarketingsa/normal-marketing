@@ -300,142 +300,179 @@ const servicesData = {
         titleAr: 'نورمال للتسويق',
         titleEn: 'Normal Marketing',
         titleFr: 'Normal Marketing',
+        groups: [
+            { k: 'content', ar: 'محتوى', en: 'Content', fr: 'Contenu' },
+            { k: 'accounts', ar: 'الحسابات', en: 'Accounts', fr: 'Comptes' },
+            { k: 'ads', ar: 'إعلانات', en: 'Ads', fr: 'Publicité' },
+            { k: 'offers', ar: 'واتساب وعروض', en: 'WhatsApp & Offers', fr: 'WhatsApp et offres' },
+            { k: 'analysis', ar: 'تحليل وخطط', en: 'Analysis & Plans', fr: 'Analyse et plans' },
+            { k: 'packs', ar: 'باقات', en: 'Packs', fr: 'Packs' }
+        ],
         items: [
-            { ar: 'تدقيق سريع لحساباتك (تقرير مختصر)', en: 'Quick Social Audit', fr: 'Audit rapide de vos comptes', price: '150' },
-            { ar: 'تصميم قوالب المنشورات', en: 'Post Template Design', fr: 'Modèles de publications', price: '350' },
-            { ar: 'تقويم محتوى شهري', en: 'Monthly Content Calendar', fr: 'Calendrier de contenu mensuel', price: '300' },
-            { ar: 'كتابة 10 كابشنات جاهزة', en: '10 Ready Captions', fr: '10 légendes prêtes à publier', price: '100' },
-            { ar: 'سيناريو ريلز (3 أفكار)', en: 'Reels Scripts (3 ideas)', fr: 'Scénarios de Reels (3 idées)', price: '200' },
-            { ar: 'تحسين البايو وهوية الحساب', en: 'Bio & Profile Makeover', fr: 'Optimisation de la bio et du profil', price: '200' },
-            { ar: 'أغلفة الهايلايت (8 أغلفة)', en: 'Highlight Covers (8)', fr: 'Couvertures de stories à la une (8)', price: '150' },
-            { ar: 'اختيار الهاشتاقات المناسبة لنشاطك', en: 'Hashtag Research', fr: 'Recherche de hashtags', price: '100' },
-            { ar: 'إعداد ميتركول وجدولة شهر', en: 'Metricool Setup + 1 Month Scheduling', fr: 'Configuration Metricool + 1 mois de planification', price: '500' },
-            { ar: 'إعداد ملف جوجل للأعمال', en: 'Google Business Profile Setup', fr: 'Création du profil Google Business', price: '300' },
-            { ar: 'إعداد حملة إعلانية واحدة', en: 'Single Ad Campaign Setup', fr: 'Mise en place d\'une campagne publicitaire', price: '550' },
-            { ar: 'تصميم إعلان (3 تصاميم)', en: 'Ad Creatives (3)', fr: 'Visuels publicitaires (3)', price: '300' },
-            { ar: 'كتابة نص إعلاني', en: 'Ad Copywriting', fr: 'Rédaction d\'un texte publicitaire', price: '120' },
-            { ar: 'رسائل واتساب التسويقية (3 رسائل)', en: 'WhatsApp Marketing Messages (3)', fr: 'Messages marketing WhatsApp (3)', price: '150' },
-            { ar: 'رد آلي وقائمة ترحيب لواتساب للأعمال', en: 'WhatsApp Business Setup', fr: 'Configuration WhatsApp Business', price: '250' },
-            { ar: 'مسابقة أو هدية لزيادة التفاعل', en: 'Giveaway Campaign', fr: 'Concours / giveaway d\'engagement', price: '450' },
-            { ar: 'تصميم عرض ترويجي ومواسم', en: 'Seasonal Promo Design', fr: 'Design de promo saisonnière', price: '200' },
-            { ar: 'تحليل 3 منافسين (صفحة واحدة)', en: 'Mini Competitor Check (3)', fr: 'Analyse de 3 concurrents (1 page)', price: '350' },
-            { ar: 'تقرير أداء شهري مبسّط', en: 'Simple Monthly Report', fr: 'Rapport de performance mensuel', price: '300' },
-            { ar: 'تتبع الزيارات والتحويلات للموقع', en: 'Website Analytics Setup', fr: 'Suivi des visites et conversions', price: '350' },
-            { ar: 'صفحة هبوط بسيطة', en: 'Simple Landing Page', fr: 'Page d\'atterrissage simple', price: '1200' },
-            { ar: 'خطة نشر ربع سنوية', en: '3-Month Content Plan', fr: 'Plan de contenu trimestriel', price: '600' },
-            { ar: 'كتابة مقالة أو بيان صحفي', en: 'Article / Press Release', fr: 'Article ou communiqué de presse', price: '300' },
-            { ar: 'استشارة تسويقية (ساعة)', en: '1-Hour Consultation', fr: 'Consultation d\'1 heure', price: '250' },
-            { ar: 'باقة «البداية»: بايو + 3 قوالب + تقويم شهر', en: 'Starter Pack: Bio + 3 Templates + Calendar', fr: 'Pack Démarrage : bio + 3 modèles + calendrier', price: '650' }
+            { ar: 'تدقيق سريع لحساباتك (تقرير مختصر)', en: 'Quick Social Audit', fr: 'Audit rapide de vos comptes', price: '150', g: 'accounts' },
+            { ar: 'تصميم قوالب المنشورات', en: 'Post Template Design', fr: 'Modèles de publications', price: '350', g: 'content' },
+            { ar: 'تقويم محتوى شهري', en: 'Monthly Content Calendar', fr: 'Calendrier de contenu mensuel', price: '300', g: 'content' },
+            { ar: 'كتابة 10 كابشنات جاهزة', en: '10 Ready Captions', fr: '10 légendes prêtes à publier', price: '100', g: 'content' },
+            { ar: 'سيناريو ريلز (3 أفكار)', en: 'Reels Scripts (3 ideas)', fr: 'Scénarios de Reels (3 idées)', price: '200', g: 'content' },
+            { ar: 'تحسين البايو وهوية الحساب', en: 'Bio & Profile Makeover', fr: 'Optimisation de la bio et du profil', price: '200', g: 'accounts' },
+            { ar: 'أغلفة الهايلايت (8 أغلفة)', en: 'Highlight Covers (8)', fr: 'Couvertures de stories à la une (8)', price: '150', g: 'accounts' },
+            { ar: 'اختيار الهاشتاقات المناسبة لنشاطك', en: 'Hashtag Research', fr: 'Recherche de hashtags', price: '100', g: 'content' },
+            { ar: 'إعداد ميتركول وجدولة شهر', en: 'Metricool Setup + 1 Month Scheduling', fr: 'Configuration Metricool + 1 mois de planification', price: '500', g: 'accounts' },
+            { ar: 'إعداد ملف جوجل للأعمال', en: 'Google Business Profile Setup', fr: 'Création du profil Google Business', price: '300', g: 'accounts' },
+            { ar: 'إعداد حملة إعلانية واحدة', en: 'Single Ad Campaign Setup', fr: 'Mise en place d\'une campagne publicitaire', price: '550', g: 'ads' },
+            { ar: 'تصميم إعلان (3 تصاميم)', en: 'Ad Creatives (3)', fr: 'Visuels publicitaires (3)', price: '300', g: 'ads' },
+            { ar: 'كتابة نص إعلاني', en: 'Ad Copywriting', fr: 'Rédaction d\'un texte publicitaire', price: '120', g: 'ads' },
+            { ar: 'رسائل واتساب التسويقية (3 رسائل)', en: 'WhatsApp Marketing Messages (3)', fr: 'Messages marketing WhatsApp (3)', price: '150', g: 'offers' },
+            { ar: 'رد آلي وقائمة ترحيب لواتساب للأعمال', en: 'WhatsApp Business Setup', fr: 'Configuration WhatsApp Business', price: '250', g: 'offers' },
+            { ar: 'مسابقة أو هدية لزيادة التفاعل', en: 'Giveaway Campaign', fr: 'Concours / giveaway d\'engagement', price: '450', g: 'offers' },
+            { ar: 'تصميم عرض ترويجي ومواسم', en: 'Seasonal Promo Design', fr: 'Design de promo saisonnière', price: '200', g: 'offers' },
+            { ar: 'تحليل 3 منافسين (صفحة واحدة)', en: 'Mini Competitor Check (3)', fr: 'Analyse de 3 concurrents (1 page)', price: '350', g: 'analysis' },
+            { ar: 'تقرير أداء شهري مبسّط', en: 'Simple Monthly Report', fr: 'Rapport de performance mensuel', price: '300', g: 'analysis' },
+            { ar: 'تتبع الزيارات والتحويلات للموقع', en: 'Website Analytics Setup', fr: 'Suivi des visites et conversions', price: '350', g: 'analysis' },
+            { ar: 'صفحة هبوط بسيطة', en: 'Simple Landing Page', fr: 'Page d\'atterrissage simple', price: '1200', g: 'analysis' },
+            { ar: 'خطة نشر ربع سنوية', en: '3-Month Content Plan', fr: 'Plan de contenu trimestriel', price: '600', g: 'content' },
+            { ar: 'كتابة مقالة أو بيان صحفي', en: 'Article / Press Release', fr: 'Article ou communiqué de presse', price: '300', g: 'content' },
+            { ar: 'استشارة تسويقية (ساعة)', en: '1-Hour Consultation', fr: 'Consultation d\'1 heure', price: '250', g: 'analysis' },
+            { ar: 'باقة «البداية»: بايو + 3 قوالب + تقويم شهر', en: 'Starter Pack: Bio + 3 Templates + Calendar', fr: 'Pack Démarrage : bio + 3 modèles + calendrier', price: '650', g: 'packs' }
         ]
     },
     'Digital': {
         titleAr: 'نورمال ديجيتال',
         titleEn: 'Normal Digital',
         titleFr: 'Normal Digital',
+        groups: [
+            { k: 'social', ar: 'حسابات ومحتوى', en: 'Social & Content', fr: 'Réseaux et contenu' },
+            { k: 'ads', ar: 'إعلانات وبريد', en: 'Ads & Email', fr: 'Pub et email' },
+            { k: 'web', ar: 'مواقع وبحث', en: 'Web & SEO', fr: 'Web et SEO' },
+            { k: 'strategy', ar: 'استراتيجية وتحليل', en: 'Strategy & Analytics', fr: 'Stratégie et analyse' }
+        ],
         items: [
-            { ar: 'إدارة حسابات التواصل', en: 'Social Media Management', fr: 'Gestion des réseaux sociaux', price: '1300' },
-            { ar: 'إطلاق الحملات الإعلانية', en: 'Ad Campaigns Launch', fr: 'Lancement publicitaire', price: '500' },
-            { ar: 'كتابة المحتوى والسيناريو', en: 'Content & Scriptwriting', fr: 'Rédaction de contenu', price: '150' },
-            { ar: 'إنشاء المواقع والمتاجر', en: 'Web & E-Commerce Dev', fr: 'Création de sites', price: '1000' },
-            { ar: 'تحسين محركات البحث SEO', en: 'SEO Optimization', fr: 'Optimisation SEO', price: '700' },
-            { ar: 'استراتيجية التسويق الرقمي', en: 'Digital Marketing Strategy', fr: 'Stratégie digitale', price: '800' },
-            { ar: 'تحليل البيانات والتقارير', en: 'Data Analytics & Reports', fr: 'Analyse de données', price: '400' },
-            { ar: 'التسويق عبر البريد', en: 'Email Marketing', fr: 'Email marketing', price: '300' },
-            { ar: 'إدارة حملات المشاهير', en: 'Influencer Campaigns', fr: 'Campagnes d’influenceurs', price: '1000' },
-            { ar: 'إعادة بناء الهوية الرقمية', en: 'Rebranding Strategy', fr: 'Stratégie de rebranding', price: '900' },
-            { ar: 'استشارات تسويقية', en: 'Marketing Consultation', fr: 'Conseil en marketing', price: '300' },
-            { ar: 'إدارة سمعة العلامة التجارية', en: 'Brand Reputation Mgmt', fr: 'Gestion de réputation', price: '600' },
-            { ar: 'ربط البوابات والأدوات', en: 'API & Tool Integration', fr: 'Intégration d’API', price: '500' },
-            { ar: 'إدارة الحملات التفاعلية', en: 'Interactive Campaigns', fr: 'Campagnes interactives', price: '600' },
-            { ar: 'إعداد خطط نشر المحتوى', en: 'Content Calendar Planning', fr: 'Planification', price: '250' }
+            { ar: 'إدارة حسابات التواصل', en: 'Social Media Management', fr: 'Gestion des réseaux sociaux', price: '1300', g: 'social' },
+            { ar: 'إطلاق الحملات الإعلانية', en: 'Ad Campaigns Launch', fr: 'Lancement publicitaire', price: '500', g: 'ads' },
+            { ar: 'كتابة المحتوى والسيناريو', en: 'Content & Scriptwriting', fr: 'Rédaction de contenu', price: '150', g: 'social' },
+            { ar: 'إنشاء المواقع والمتاجر', en: 'Web & E-Commerce Dev', fr: 'Création de sites', price: '1000', g: 'web' },
+            { ar: 'تحسين محركات البحث SEO', en: 'SEO Optimization', fr: 'Optimisation SEO', price: '700', g: 'web' },
+            { ar: 'استراتيجية التسويق الرقمي', en: 'Digital Marketing Strategy', fr: 'Stratégie digitale', price: '800', g: 'strategy' },
+            { ar: 'تحليل البيانات والتقارير', en: 'Data Analytics & Reports', fr: 'Analyse de données', price: '400', g: 'strategy' },
+            { ar: 'التسويق عبر البريد', en: 'Email Marketing', fr: 'Email marketing', price: '300', g: 'ads' },
+            { ar: 'إدارة حملات المشاهير', en: 'Influencer Campaigns', fr: 'Campagnes d’influenceurs', price: '1000', g: 'social' },
+            { ar: 'إعادة بناء الهوية الرقمية', en: 'Rebranding Strategy', fr: 'Stratégie de rebranding', price: '900', g: 'strategy' },
+            { ar: 'استشارات تسويقية', en: 'Marketing Consultation', fr: 'Conseil en marketing', price: '300', g: 'strategy' },
+            { ar: 'إدارة سمعة العلامة التجارية', en: 'Brand Reputation Mgmt', fr: 'Gestion de réputation', price: '600', g: 'strategy' },
+            { ar: 'ربط البوابات والأدوات', en: 'API & Tool Integration', fr: 'Intégration d’API', price: '500', g: 'web' },
+            { ar: 'إدارة الحملات التفاعلية', en: 'Interactive Campaigns', fr: 'Campagnes interactives', price: '600', g: 'social' },
+            { ar: 'إعداد خطط نشر المحتوى', en: 'Content Calendar Planning', fr: 'Planification', price: '250', g: 'social' }
         ]
     },
     'Studio': {
         titleAr: 'نورمال ستوديو',
         titleEn: 'Normal Studio',
         titleFr: 'Normal Studio',
+        groups: [
+            { k: 'editing', ar: 'مونتاج ومؤثرات', en: 'Editing & VFX', fr: 'Montage et VFX' },
+            { k: 'shooting', ar: 'تصوير وإنتاج', en: 'Shooting & Production', fr: 'Tournage et production' },
+            { k: 'events', ar: 'فعاليات وبث', en: 'Events & Live', fr: 'Événements et direct' },
+            { k: 'sound', ar: 'صوتيات', en: 'Audio', fr: 'Audio' }
+        ],
         items: [
-            { ar: 'مونتاج وتعديل الفيديو', en: 'Video Editing', fr: 'Montage vidéo', price: '300' },
-            { ar: 'تصحيح وتدرج الألوان', en: 'Color Grading', fr: 'Étalonnage couleur', price: '225' },
-            { ar: 'إنتاج فيديو إعلاني كامل', en: 'Commercial Video Production', fr: 'Production commerciale', price: '950' },
-            { ar: 'المؤثرات البصرية Visual Effects', en: 'VFX & Visual Effects', fr: 'Effets visuels (VFX)', price: '450' },
-            { ar: 'تصوير منتجات ميداني', en: 'Product Photography', fr: 'Photographie produits', price: '850' },
-            { ar: 'المونتاج السينمائي', en: 'Cinematic Editing', fr: 'Montage cinématographique', price: '600' },
-            { ar: 'المؤثرات الصوتية والهندسة', en: 'Sound Design & Engineering', fr: 'Design sonore', price: '250' },
-            { ar: 'تصوير وتسجيل ستوديو', en: 'Studio Shooting & Recording', fr: 'Tournage studio', price: '950' },
-            { ar: 'إنتاج فيديو موشن جرافيك', en: 'Motion Graphics Video', fr: 'Motion Design', price: '550' },
-            { ar: 'مونتاج الريلز والشورتس', en: 'Reels & Shorts Editing', fr: 'Montage Reels', price: '150' },
-            { ar: 'تأجير معدات إضاءة واستوديو', en: 'Studio Equipment Rental', fr: 'Location d’équipement', price: '700' },
-            { ar: 'إخراج كليبات وإعلانات', en: 'Directing Services', fr: 'Réalisation', price: '1450' },
-            { ar: 'تغطية الفعاليات والمؤتمرات', en: 'Event Coverage', fr: 'Couverture d’événements', price: '1200' },
-            { ar: 'البث المباشر الاحترافي', en: 'Professional Live Streaming', fr: 'Streaming en direct', price: '1100' },
-            { ar: 'معالجة ومكساج الصوت', en: 'Audio Post-Production', fr: 'Post-production audio', price: '300' }
+            { ar: 'مونتاج وتعديل الفيديو', en: 'Video Editing', fr: 'Montage vidéo', price: '300', g: 'editing' },
+            { ar: 'تصحيح وتدرج الألوان', en: 'Color Grading', fr: 'Étalonnage couleur', price: '225', g: 'editing' },
+            { ar: 'إنتاج فيديو إعلاني كامل', en: 'Commercial Video Production', fr: 'Production commerciale', price: '950', g: 'shooting' },
+            { ar: 'المؤثرات البصرية Visual Effects', en: 'VFX & Visual Effects', fr: 'Effets visuels (VFX)', price: '450', g: 'editing' },
+            { ar: 'تصوير منتجات ميداني', en: 'Product Photography', fr: 'Photographie produits', price: '850', g: 'shooting' },
+            { ar: 'المونتاج السينمائي', en: 'Cinematic Editing', fr: 'Montage cinématographique', price: '600', g: 'editing' },
+            { ar: 'المؤثرات الصوتية والهندسة', en: 'Sound Design & Engineering', fr: 'Design sonore', price: '250', g: 'sound' },
+            { ar: 'تصوير وتسجيل ستوديو', en: 'Studio Shooting & Recording', fr: 'Tournage studio', price: '950', g: 'shooting' },
+            { ar: 'إنتاج فيديو موشن جرافيك', en: 'Motion Graphics Video', fr: 'Motion Design', price: '550', g: 'editing' },
+            { ar: 'مونتاج الريلز والشورتس', en: 'Reels & Shorts Editing', fr: 'Montage Reels', price: '150', g: 'editing' },
+            { ar: 'تأجير معدات إضاءة واستوديو', en: 'Studio Equipment Rental', fr: 'Location d’équipement', price: '700', g: 'shooting' },
+            { ar: 'إخراج كليبات وإعلانات', en: 'Directing Services', fr: 'Réalisation', price: '1450', g: 'shooting' },
+            { ar: 'تغطية الفعاليات والمؤتمرات', en: 'Event Coverage', fr: 'Couverture d’événements', price: '1200', g: 'events' },
+            { ar: 'البث المباشر الاحترافي', en: 'Professional Live Streaming', fr: 'Streaming en direct', price: '1100', g: 'events' },
+            { ar: 'معالجة ومكساج الصوت', en: 'Audio Post-Production', fr: 'Post-production audio', price: '300', g: 'sound' }
         ]
     },
     'Art': {
         titleAr: 'نورمال آرت',
         titleEn: 'Normal Art',
         titleFr: 'Normal Art',
+        groups: [
+            { k: 'identity', ar: 'هوية وشعار', en: 'Identity & Logo', fr: 'Identité et logo' },
+            { k: 'social', ar: 'سوشيال وإعلان', en: 'Social & Ads', fr: 'Réseaux et pub' },
+            { k: 'printd', ar: 'مطبوعات', en: 'Print Design', fr: 'Design imprimé' },
+            { k: 'other', ar: 'واجهات وعروض', en: 'UI & Decks', fr: 'UI et présentations' }
+        ],
         items: [
-            { ar: 'تصميم هوية بصرية كاملة', en: 'Full Brand Identity Design', fr: 'Design d’identité visuelle', price: '1100' },
-            { ar: 'تصميم شعار Logo Design', en: 'Logo Design', fr: 'Conception de logo', price: '450' },
-            { ar: 'تصاميم السوشيال ميديا', en: 'Social Media Designs', fr: 'Design réseaux sociaux', price: '100' },
-            { ar: 'تصميم البكجات والتغليف', en: 'Packaging Design', fr: 'Design d’emballage', price: '550' },
-            { ar: 'تصميم الملف التعريفي Profile', en: 'Company Profile Design', fr: 'Profile d’entreprise', price: '500' },
-            { ar: 'رسم واختيار الشخصيات', en: 'Character Design', fr: 'Design de personnages', price: '600' },
-            { ar: 'تصميم العروض التقديمية', en: 'Presentation Deck Design', fr: 'Design de présentation', price: '400' },
-            { ar: 'تصميم لوحات وإعلانات', en: 'Banner & Sign Design', fr: 'Design de bannières', price: '300' },
-            { ar: 'تصميم المطبوعات والكتالوجات', en: 'Brochure & Catalog Design', fr: 'Design de brochures', price: '400' },
-            { ar: 'تصميم واجهات المستخدم UI/UX', en: 'UI/UX Interface Design', fr: 'UI/UX Design', price: '1000' },
-            { ar: 'تصميم القوائم والمنيو', en: 'Menu Design', fr: 'Design de menu', price: '275' },
-            { ar: 'تصميم كروت الأعمال', en: 'Business Cards Design', fr: 'Cartes de visite', price: '125' },
-            { ar: 'تطوير ودليل العلامة التجارية', en: 'Brand Guidelines Manual', fr: 'Guide de marque', price: '700' },
-            { ar: 'تصميم ملصقات واستيكرات', en: 'Sticker Design', fr: 'Design d’autocollants', price: '100' },
-            { ar: 'تعديل ومعالجة الصور', en: 'Photo Retouching', fr: 'Retouche photo', price: '75' }
+            { ar: 'تصميم هوية بصرية كاملة', en: 'Full Brand Identity Design', fr: 'Design d’identité visuelle', price: '1100', g: 'identity' },
+            { ar: 'تصميم شعار Logo Design', en: 'Logo Design', fr: 'Conception de logo', price: '450', g: 'identity' },
+            { ar: 'تصاميم السوشيال ميديا', en: 'Social Media Designs', fr: 'Design réseaux sociaux', price: '100', g: 'social' },
+            { ar: 'تصميم البكجات والتغليف', en: 'Packaging Design', fr: 'Design d’emballage', price: '550', g: 'printd' },
+            { ar: 'تصميم الملف التعريفي Profile', en: 'Company Profile Design', fr: 'Profile d’entreprise', price: '500', g: 'identity' },
+            { ar: 'رسم واختيار الشخصيات', en: 'Character Design', fr: 'Design de personnages', price: '600', g: 'other' },
+            { ar: 'تصميم العروض التقديمية', en: 'Presentation Deck Design', fr: 'Design de présentation', price: '400', g: 'other' },
+            { ar: 'تصميم لوحات وإعلانات', en: 'Banner & Sign Design', fr: 'Design de bannières', price: '300', g: 'social' },
+            { ar: 'تصميم المطبوعات والكتالوجات', en: 'Brochure & Catalog Design', fr: 'Design de brochures', price: '400', g: 'printd' },
+            { ar: 'تصميم واجهات المستخدم UI/UX', en: 'UI/UX Interface Design', fr: 'UI/UX Design', price: '1000', g: 'other' },
+            { ar: 'تصميم القوائم والمنيو', en: 'Menu Design', fr: 'Design de menu', price: '275', g: 'printd' },
+            { ar: 'تصميم كروت الأعمال', en: 'Business Cards Design', fr: 'Cartes de visite', price: '125', g: 'printd' },
+            { ar: 'تطوير ودليل العلامة التجارية', en: 'Brand Guidelines Manual', fr: 'Guide de marque', price: '700', g: 'identity' },
+            { ar: 'تصميم ملصقات واستيكرات', en: 'Sticker Design', fr: 'Design d’autocollants', price: '100', g: 'social' },
+            { ar: 'تعديل ومعالجة الصور', en: 'Photo Retouching', fr: 'Retouche photo', price: '75', g: 'other' }
         ]
     },
     'Print': {
         titleAr: 'نورمال برينت',
         titleEn: 'Normal Print',
         titleFr: 'Normal Print',
+        groups: [
+            { k: 'paper', ar: 'ورقيات', en: 'Paper', fr: 'Papeterie' },
+            { k: 'pack', ar: 'تغليف', en: 'Packaging', fr: 'Emballage' },
+            { k: 'signs', ar: 'لوحات ومعارض', en: 'Signs & Expo', fr: 'Enseignes et salons' },
+            { k: 'gifts', ar: 'هدايا وأزياء', en: 'Gifts & Apparel', fr: 'Cadeaux et textile' }
+        ],
         items: [
-            { ar: 'طباعة كروت وأوراق رسمية', en: 'Business Cards Printing', fr: 'Impression cartes de visite', price: '100' },
-            { ar: 'طباعة التغليف والأكياس', en: 'Packaging Printing', fr: 'Impression d’emballages', price: '275' },
-            { ar: 'طباعة الهدايا الدعائية', en: 'Promo Gifts Printing', fr: 'Cadeaux promotionnels', price: '175' },
-            { ar: 'طباعة اللوحات الإعلانية', en: 'Signboards Printing', fr: 'Impression d’enseignes', price: '225' },
-            { ar: 'طباعة البروشورات والمنشورات', en: 'Flyers Printing', fr: 'Impression de flyers', price: '125' },
-            { ar: 'طباعة الكتب والكتالوجات', en: 'Catalog Printing', fr: 'Impression de catalogues', price: '400' },
-            { ar: 'طباعة المنسوجات والزي', en: 'Apparel & Uniform Printing', fr: 'Impression textile', price: '200' },
-            { ar: 'طباعة الاستيكرات والملصقات', en: 'Stickers Roll Printing', fr: 'Impression d’autocollants', price: '100' },
-            { ar: 'طباعة العلب الكرتونية', en: 'Carton Box Printing', fr: 'Impression de boîtes', price: '350' },
-            { ar: 'طباعة الأجنحة والمعارض', en: 'Exhibition Booth Printing', fr: 'Impression pour stands', price: '900' },
-            { ar: 'طباعة التقاويم والمذكرات', en: 'Diaries Printing', fr: 'Impression d’agendas', price: '175' },
-            { ar: 'طباعة المنيو البلاستيكي', en: 'Menu Board Printing', fr: 'Impression de menus', price: '125' },
-            { ar: 'طباعة الأظرف والوسائل', en: 'Envelope Printing', fr: 'Impression d’enveloppes', price: '100' },
-            { ar: 'طباعة الأوراق الذهبية', en: 'Gold Foil Printing', fr: 'Impression dorure', price: '275' },
-            { ar: 'طباعة الأعلام والرولات Roll-up', en: 'Roll-up Banners Printing', fr: 'Impression de Roll-up', price: '200' }
+            { ar: 'طباعة كروت وأوراق رسمية', en: 'Business Cards Printing', fr: 'Impression cartes de visite', price: '100', g: 'paper' },
+            { ar: 'طباعة التغليف والأكياس', en: 'Packaging Printing', fr: 'Impression d’emballages', price: '275', g: 'pack' },
+            { ar: 'طباعة الهدايا الدعائية', en: 'Promo Gifts Printing', fr: 'Cadeaux promotionnels', price: '175', g: 'gifts' },
+            { ar: 'طباعة اللوحات الإعلانية', en: 'Signboards Printing', fr: 'Impression d’enseignes', price: '225', g: 'signs' },
+            { ar: 'طباعة البروشورات والمنشورات', en: 'Flyers Printing', fr: 'Impression de flyers', price: '125', g: 'paper' },
+            { ar: 'طباعة الكتب والكتالوجات', en: 'Catalog Printing', fr: 'Impression de catalogues', price: '400', g: 'paper' },
+            { ar: 'طباعة المنسوجات والزي', en: 'Apparel & Uniform Printing', fr: 'Impression textile', price: '200', g: 'gifts' },
+            { ar: 'طباعة الاستيكرات والملصقات', en: 'Stickers Roll Printing', fr: 'Impression d’autocollants', price: '100', g: 'pack' },
+            { ar: 'طباعة العلب الكرتونية', en: 'Carton Box Printing', fr: 'Impression de boîtes', price: '350', g: 'pack' },
+            { ar: 'طباعة الأجنحة والمعارض', en: 'Exhibition Booth Printing', fr: 'Impression pour stands', price: '900', g: 'signs' },
+            { ar: 'طباعة التقاويم والمذكرات', en: 'Diaries Printing', fr: 'Impression d’agendas', price: '175', g: 'paper' },
+            { ar: 'طباعة المنيو البلاستيكي', en: 'Menu Board Printing', fr: 'Impression de menus', price: '125', g: 'signs' },
+            { ar: 'طباعة الأظرف والوسائل', en: 'Envelope Printing', fr: 'Impression d’enveloppes', price: '100', g: 'paper' },
+            { ar: 'طباعة الأوراق الذهبية', en: 'Gold Foil Printing', fr: 'Impression dorure', price: '275', g: 'paper' },
+            { ar: 'طباعة الأعلام والرولات Roll-up', en: 'Roll-up Banners Printing', fr: 'Impression de Roll-up', price: '200', g: 'signs' }
         ]
     },
     'Office': {
         titleAr: 'نورمال أوفيس',
         titleEn: 'Normal Office',
         titleFr: 'Normal Office',
+        groups: [
+            { k: 'docs', ar: 'مستندات', en: 'Documents', fr: 'Documents' },
+            { k: 'design', ar: 'تصميم مكتبي', en: 'Office Design', fr: 'Design bureautique' },
+            { k: 'finance', ar: 'دراسات وتقارير', en: 'Studies & Reports', fr: 'Études et rapports' }
+        ],
         items: [
-            { ar: 'تصميم السيرة الذاتية CV الاحترافية', en: 'Professional CV Design', fr: 'Design de CV professionnel', price: '150' },
-            { ar: 'تصميم عروض الأسعار للشركات Quotation', en: 'Corporate Quotation Design', fr: 'Design de devis d’entreprise', price: '225' },
-            { ar: 'إعداد الملف التعريفي Company Profile', en: 'Company Profile Creation', fr: 'Création de profil d’entreprise', price: '350' },
-            { ar: 'كتابة الخطابات الرسمية والإدارية', en: 'Official Administrative Letters', fr: 'Lettres administratives officielles', price: '100' },
-            { ar: 'ترجمة المستندات والوثائق الرسمية', en: 'Document Translation Services', fr: 'Services de traduction de documents', price: '150' },
-            { ar: 'تنسيق وعمل العروض التقديمية PPT', en: 'Presentation Formatting (PPT)', fr: 'Mise en page de présentations', price: '225' },
-            { ar: 'صياغة العقود واتفاقيات العمل', en: 'Contracts & Work Agreements', fr: 'Rédaction de contrats de travail', price: '450' },
-            { ar: 'تفريغ النصوص والملفات الصوتية', en: 'Transcription & Typing Services', fr: 'Services de transcription', price: '100' },
-            { ar: 'إعداد دراسات الجدوى المبسطة', en: 'Simplified Feasibility Studies', fr: 'Études de faisabilité simplifiées', price: '650' },
-            { ar: 'إعداد التقارير المالية والإدارية', en: 'Financial & Administrative Reports', fr: 'Rapports financiers et administratifs', price: '300' },
-            { ar: 'تصميم النماذج والفواتير المعتمدة', en: 'Invoice & Form Templates Design', fr: 'Design de factures et formulaires', price: '125' },
-            { ar: 'كتابة المحتوى الإداري للمراسلات', en: 'Business Correspondence Content', fr: 'Contenu de correspondance d’affaires', price: '125' },
-            { ar: 'تنظيم وتدقيق الجداول الإحصائية Excel', en: 'Excel Data Organization & Sheets', fr: 'Organisation de données Excel', price: '175' },
-            { ar: 'إعداد خطط العمل التشغيلية Operations', en: 'Operational Business Plans', fr: 'Plans d’affaires opérationnels', price: '400' },
-            { ar: 'خدمة أعمال مكتبية أخرى (مخصصة)', en: 'Other Custom Office Services', fr: 'Autres services de bureau personnalisés', price: '175' }
+            { ar: 'تصميم السيرة الذاتية CV الاحترافية', en: 'Professional CV Design', fr: 'Design de CV professionnel', price: '150', g: 'design' },
+            { ar: 'تصميم عروض الأسعار للشركات Quotation', en: 'Corporate Quotation Design', fr: 'Design de devis d’entreprise', price: '225', g: 'design' },
+            { ar: 'إعداد الملف التعريفي Company Profile', en: 'Company Profile Creation', fr: 'Création de profil d’entreprise', price: '350', g: 'design' },
+            { ar: 'كتابة الخطابات الرسمية والإدارية', en: 'Official Administrative Letters', fr: 'Lettres administratives officielles', price: '100', g: 'docs' },
+            { ar: 'ترجمة المستندات والوثائق الرسمية', en: 'Document Translation Services', fr: 'Services de traduction de documents', price: '150', g: 'docs' },
+            { ar: 'تنسيق وعمل العروض التقديمية PPT', en: 'Presentation Formatting (PPT)', fr: 'Mise en page de présentations', price: '225', g: 'design' },
+            { ar: 'صياغة العقود واتفاقيات العمل', en: 'Contracts & Work Agreements', fr: 'Rédaction de contrats de travail', price: '450', g: 'docs' },
+            { ar: 'تفريغ النصوص والملفات الصوتية', en: 'Transcription & Typing Services', fr: 'Services de transcription', price: '100', g: 'docs' },
+            { ar: 'إعداد دراسات الجدوى المبسطة', en: 'Simplified Feasibility Studies', fr: 'Études de faisabilité simplifiées', price: '650', g: 'finance' },
+            { ar: 'إعداد التقارير المالية والإدارية', en: 'Financial & Administrative Reports', fr: 'Rapports financiers et administratifs', price: '300', g: 'finance' },
+            { ar: 'تصميم النماذج والفواتير المعتمدة', en: 'Invoice & Form Templates Design', fr: 'Design de factures et formulaires', price: '125', g: 'design' },
+            { ar: 'كتابة المحتوى الإداري للمراسلات', en: 'Business Correspondence Content', fr: 'Contenu de correspondance d’affaires', price: '125', g: 'docs' },
+            { ar: 'تنظيم وتدقيق الجداول الإحصائية Excel', en: 'Excel Data Organization & Sheets', fr: 'Organisation de données Excel', price: '175', g: 'finance' },
+            { ar: 'إعداد خطط العمل التشغيلية Operations', en: 'Operational Business Plans', fr: 'Plans d’affaires opérationnels', price: '400', g: 'finance' },
+            { ar: 'خدمة أعمال مكتبية أخرى (مخصصة)', en: 'Other Custom Office Services', fr: 'Autres services de bureau personnalisés', price: '175', g: 'docs' }
         ]
     },
 };
@@ -640,6 +677,8 @@ function toggleTheme() {
 }
 
 let currentCategory = null;
+let subFilter = 'all';
+let subFilterCat = null;
 let currentLang = 'ar';
 
 function toggleLangMenu(event) {
@@ -709,38 +748,66 @@ function openModal(category) {
     if (sample) { modalImg.src = sample.svgKey ? svgUrl(sample.svgKey) : assetUrl(sample.img); sampleBox.style.display = 'block'; }
     else { modalImg.removeAttribute('src'); sampleBox.style.display = 'none'; }
 
-    container.innerHTML = '';
-    data.items.forEach(item => {
-        const btn = document.createElement('div');
-        btn.className = 'sub-service-item';
-        
-        let itemName = item.ar;
-        let priceTag = `(تبدأ من ${item.price} ر.س)`;
-        
-        if (currentLang === 'en') {
-            itemName = item.en;
-            priceTag = `(From ${item.price} SAR)`;
-        } else if (currentLang === 'fr') {
-            itemName = item.fr || item.en;
-            priceTag = `(À partir de ${item.price} SAR)`;
-        }
-        
-        btn.innerHTML = `<span>${itemName}</span><span class="service-price-tag">${priceTag}</span>`;
-        
-        btn.onclick = function() {
-            document.querySelectorAll('.sub-service-item').forEach(el => el.classList.remove('selected-item'));
-            btn.classList.add('selected-item');
-            document.getElementById('serviceName').value = `${itemName} - [${priceTag}]`;
-        };
+    if (subFilterCat !== category) { subFilter = 'all'; subFilterCat = category; }
+    const filters = document.getElementById('subServicesFilters');
+    const L2 = currentLang === 'ar' ? 'ar' : (currentLang === 'en' ? 'en' : 'fr');
+    const allLabel = { ar: 'الكل', en: 'All', fr: 'Tout' }[L2];
 
-        container.appendChild(btn);
-    });
+    function renderItems() {
+        container.innerHTML = '';
+        data.items.filter(it => subFilter === 'all' || it.g === subFilter).forEach(item => {
+            const btn = document.createElement('div');
+            btn.className = 'sub-service-item';
+
+            let itemName = item.ar;
+            let priceTag = `(تبدأ من ${item.price} ر.س)`;
+
+            if (currentLang === 'en') {
+                itemName = item.en;
+                priceTag = `(From ${item.price} SAR)`;
+            } else if (currentLang === 'fr') {
+                itemName = item.fr || item.en;
+                priceTag = `(À partir de ${item.price} SAR)`;
+            }
+
+            btn.innerHTML = `<span>${itemName}</span><span class="service-price-tag">${priceTag}</span>`;
+
+            btn.onclick = function() {
+                document.querySelectorAll('.sub-service-item').forEach(el => el.classList.remove('selected-item'));
+                btn.classList.add('selected-item');
+                document.getElementById('serviceName').value = `${itemName} - [${priceTag}]`;
+            };
+
+            container.appendChild(btn);
+        });
+        container.scrollTop = 0;
+    }
+
+    function renderFilters() {
+        if (!filters) return;
+        filters.innerHTML = '';
+        const chips = [{ k: 'all', label: allLabel, n: data.items.length }].concat((data.groups || []).map(g => ({ k: g.k, label: g[L2], n: data.items.filter(it => it.g === g.k).length })));
+        if (chips.length < 3) { filters.style.display = 'none'; return; }
+        filters.style.display = 'flex';
+        chips.forEach(c => {
+            const chip = document.createElement('button');
+            chip.type = 'button';
+            chip.className = 'sub-filter-chip' + (c.k === subFilter ? ' active' : '');
+            chip.textContent = `${c.label} ${c.n}`;
+            chip.onclick = function() { subFilter = c.k; renderFilters(); renderItems(); };
+            filters.appendChild(chip);
+        });
+    }
+
+    renderFilters();
+    renderItems();
 
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
+    subFilterCat = null;
     document.getElementById('modal').style.display = 'none';
     document.body.style.overflow = 'auto';
     document.getElementById('requestForm').reset();

@@ -1502,3 +1502,38 @@ body, .brand-badge, .stat-number, .footer-brand, .p-badge, .logo-main, .logo-sub
 /* ضغطة واحدة على شعار نورمال تعيدك إلى أعلى الصفحة */
 #brandTop, #footerBrandTop { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 #brandTop:active, #footerBrandTop:active { opacity: .75; }
+
+
+/* تصنيف الخدمات الفرعية (شرائح) */
+.sub-filters {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 2px 2px 10px;
+    margin-bottom: 4px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    width: 0;
+    min-width: 100%;
+}
+.sub-filters::-webkit-scrollbar { display: none; }
+.sub-filter-chip {
+    flex: 0 0 auto;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1.5px solid var(--border-color);
+    background: var(--surface-2);
+    color: var(--text-main);
+    cursor: pointer;
+    transition: background .2s ease, color .2s ease, border-color .2s ease, transform .15s ease;
+}
+.sub-filter-chip:hover { border-color: var(--normal-blue); transform: translateY(-1px); }
+.sub-filter-chip.active {
+    background: var(--normal-navy);
+    color: #fff;
+    border-color: var(--normal-navy);
+}
+:root[data-theme="dark"] .sub-filter-chip.active { background: var(--normal-blue); border-color: var(--normal-blue); }
