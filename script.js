@@ -719,7 +719,7 @@ function selectLanguage(lang) {
 
     document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.setAttribute('lang', currentLang);
-    document.title = { ar: 'Normal Marketing SA | نورمال للتسويق', en: 'Normal Marketing SA | Marketing Agency', fr: 'Normal Marketing SA | Agence marketing' }[currentLang];
+    document.title = { ar: 'Normal Marketing SA | نورمال للتسويق', en: 'Normal Marketing SA', fr: 'Normal Marketing SA' }[currentLang];
     document.querySelectorAll('.modal-lang-btn').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === currentLang));
     try { localStorage.setItem('lang', currentLang); } catch (e) {}
 

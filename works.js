@@ -66,7 +66,7 @@ const portfolioData = [
       descAr: "تذكرة وقسيمة حقيقية لخدمة صف السيارات بجزء قابل للفصل وترقيم وخريطة للسيارة وشروط الاستلام", descEn: "A real valet ticket and coupon: tear-off stub, numbering, car diagram and handover terms", descFr: "Un vrai ticket voiturier : talon détachable, numérotation, schéma du véhicule et conditions" },
     { cat: 'Office', img: 'images/office-letter.webp',
       titleAr: "خطاب عرض تعاون من نورمال", titleEn: "Normal Partnership Letter", titleFr: "Lettre de partenariat Normal",
-      descAr: "خطاب رسمي بهوية نورمال: ترويسة وأرقام الوكالة وأقسامها الستة والتزاماتنا وتوقيع وتذييل بالتواصل", descEn: "An official Normal-branded letter: letterhead, agency figures, the six divisions, our promise, signature and contact footer", descFr: "Une lettre officielle à l’identité Normal : en-tête, chiffres, six divisions, engagements, signature et pied de page" },
+      descAr: "خطاب رسمي بهوية نورمال: ترويسة وأرقام نورمال للتسويق وأقسامها الستة والتزاماتنا وتوقيع وتذييل بالتواصل", descEn: "An official Normal-branded letter: letterhead, Normal Marketing SA figures, the six divisions, our promise, signature and contact footer", descFr: "Une lettre officielle à l’identité Normal : en-tête, chiffres, six divisions, engagements, signature et pied de page" },
     { cat: 'Art', img: 'images/art-logos.webp',
       titleAr: "عرض مقترحات الشعار", titleEn: "Logo Concepts Presentation", titleFr: "Présentation de logos",
       descAr: "ثلاثة مقترحات لشعار شركة هيا لصف السيارات، مع شرح فكرة ومعنى كل مقترح", descEn: "Three logo directions for Haya Valet Parking, each with its idea and meaning", descFr: "Trois pistes de logo pour Haya Valet Parking, chacune avec son idée et son sens" },
