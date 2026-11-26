@@ -719,7 +719,7 @@ function selectLanguage(lang) {
 
     document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
     document.documentElement.setAttribute('lang', currentLang);
-    document.title = { ar: 'Normal Agency | وكالة نورمال الإبداعية', en: 'Normal Agency | Creative Digital Agency', fr: 'Normal Agency | Agence créative' }[currentLang];
+    document.title = { ar: 'Normal Marketing SA | نورمال للتسويق', en: 'Normal Marketing SA | Marketing Agency', fr: 'Normal Marketing SA | Agence marketing' }[currentLang];
     document.querySelectorAll('.modal-lang-btn').forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === currentLang));
     try { localStorage.setItem('lang', currentLang); } catch (e) {}
 
@@ -905,7 +905,7 @@ function sendViaWhatsApp() {
     }
 
     const phoneNumber = "966543262920";
-    const message = `مرحباً وكالة نورمال 👋%0A%0A*طلب خدمة جديد / New Order:*%0A• *الخدمة والسعر:* ${encodeURIComponent(service)}%0A• *الاسم:* ${encodeURIComponent(name)}%0A• *التفاصيل:* ${encodeURIComponent(details)}`;
+    const message = `مرحباً نورمال للتسويق 👋%0A%0A*طلب خدمة جديد / New Order:*%0A• *الخدمة والسعر:* ${encodeURIComponent(service)}%0A• *الاسم:* ${encodeURIComponent(name)}%0A• *التفاصيل:* ${encodeURIComponent(details)}`;
     
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
 }
@@ -969,8 +969,8 @@ async function submitReview(e) {
 // ===== شريط التنقل السفلي: واتساب جاهز الرسالة + تمييز القسم الحالي =====
 function openWa(kind) {
     const m = {
-        consult: { ar: 'مرحباً وكالة نورمال، أرغب بحجز استشارة.', en: 'Hello Normal Agency, I would like to book a consultation.', fr: 'Bonjour Normal Agency, je souhaite réserver une consultation.' },
-        support: { ar: 'مرحباً وكالة نورمال، أحتاج مساعدة من خدمة العملاء.', en: 'Hello Normal Agency, I need help from customer support.', fr: 'Bonjour Normal Agency, j’ai besoin d’aide du service client.' }
+        consult: { ar: 'مرحباً نورمال للتسويق، أرغب بحجز استشارة.', en: 'Hello Normal Marketing SA, I would like to book a consultation.', fr: 'Bonjour Normal Marketing SA, je souhaite réserver une consultation.' },
+        support: { ar: 'مرحباً نورمال للتسويق، أحتاج مساعدة من خدمة العملاء.', en: 'Hello Normal Marketing SA, I need help from customer support.', fr: 'Bonjour Normal Marketing SA, j’ai besoin d’aide du service client.' }
     };
     window.open('https://wa.me/966543262920?text=' + encodeURIComponent(m[kind][currentLang]), '_blank');
 }
