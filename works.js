@@ -19,9 +19,6 @@ const portfolioData = [
     { cat: 'Studio', img: 'images/work-dont-sleep.webp', video: 'videos/work-dont-sleep.mp4', first: true,
       titleAr: "إعلان فيلم «لا تنم»", titleEn: "Don’t Sleep — Film Trailer", titleFr: "Don’t Sleep — bande-annonce",
       descAr: "إعلان تشويقي لفيلم مع ملصقه، بعد التعديل النهائي", descEn: "A suspense trailer with its poster, final cut", descFr: "Une bande-annonce à suspense avec son affiche, montage final" },
-    { cat: 'Studio', img: 'images/work-tesla.webp', video: 'videos/work-tesla.mp4', first: true,
-      titleAr: "إعلان تسلا سايبرتراك", titleEn: "Tesla Cybertruck Ad", titleFr: "Pub Tesla Cybertruck",
-      descAr: "إعلان عمودي للجوال بإيقاع سريع وأرقام الأداء", descEn: "A vertical mobile ad with a fast rhythm and performance figures", descFr: "Une pub verticale pour mobile, rythme rapide et chiffres de performance" },
     { cat: 'Studio', img: 'images/work-binafsaj-video.webp', video: 'videos/work-binafsaj-video.mp4', first: true,
       titleAr: "فيديو احتفالية يوم التأسيس", titleEn: "Founding Day Celebration Video", titleFr: "Vidéo de la fête de la Fondation",
       descAr: "فيديو من احتفالية يوم التأسيس في بنفسج كافيه", descEn: "A video from the Founding Day celebration at Binafsaj Café", descFr: "Vidéo de la célébration de la Fondation au Café Binafsaj" },
@@ -236,15 +233,6 @@ const showcaseData = [
   {
     "cat": "Studio",
     "type": "video",
-    "src": "videos/work-tesla.mp4",
-    "poster": "images/work-tesla.webp",
-    "ar": "إعلان تسلا سايبرتراك",
-    "en": "Tesla Cybertruck Ad",
-    "fr": "Pub Tesla Cybertruck"
-  },
-  {
-    "cat": "Studio",
-    "type": "video",
     "src": "videos/work-binafsaj-video.mp4",
     "poster": "images/work-binafsaj-video.webp",
     "ar": "فيديو احتفالية يوم التأسيس",
@@ -266,14 +254,6 @@ const showcaseData = [
     "ar": "ملصق فيلم «لا تنم»",
     "en": "Don’t Sleep — Poster",
     "fr": "Don’t Sleep — affiche"
-  },
-  {
-    "cat": "Studio",
-    "type": "image",
-    "src": "images/show/poster-tesla.webp",
-    "ar": "ملصق إعلان تسلا سايبرتراك",
-    "en": "Tesla Cybertruck — Poster",
-    "fr": "Tesla Cybertruck — affiche"
   },
   {
     "cat": "Marketing",
